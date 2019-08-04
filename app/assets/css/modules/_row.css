@@ -1,0 +1,43 @@
+.row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &--gutters{
+        margin-right: -65px; /*powiększa element o wartość ujemnego marginesu*/
+    }
+
+    &--gutters > div{
+        padding-right: 65px; /* ostatni padding jest ukryty dzięki overflow hidden na wraperze*/
+    }
+
+    &__b-margin-until-medium{
+        margin-bottom: 1.8rem;
+    }
+
+    @mixin atMedium{
+        &__b-margin-until-medium{
+            margin-bottom: 0;
+        }
+
+        &--horizont{
+            flex-direction: row;
+        }
+
+        &__medium-4{
+            flex-basis: 33.33%;
+        }
+
+        &__medium-4--larger{
+            flex-basis: 37%;
+        }
+    
+        &__medium-8{
+            flex-basis: 66.66%;
+        }
+
+        &__medium-8--smaller{
+            flex-basis: 62%;
+        }
+    }
+}
