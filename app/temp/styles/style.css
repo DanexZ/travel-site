@@ -683,8 +683,16 @@ ul{
         margin-right: -65px; /*powiększa element o wartość ujemnego marginesu*/
     }
 
+.row--gutters-large{
+        margin-right: -100px;
+    }
+
 .row--gutters > div{
         padding-right: 65px; /* ostatni padding jest ukryty dzięki overflow hidden na wraperze*/
+    }
+
+.row--gutters-large > div{
+        padding-right: 100px;
     }
 
 .row__b-margin-until-medium{
@@ -712,6 +720,11 @@ ul{
             -ms-flex-preferred-size: 37%;
                 flex-basis: 37%;
         }
+
+        .row__medium-6{
+            -ms-flex-preferred-size: 50%;
+                flex-basis: 50%;
+        }
     
         .row__medium-8{
             -ms-flex-preferred-size: 66.66%;
@@ -725,7 +738,7 @@ ul{
     }
 
 .generic-content-container p{
-        margin: 1.8rem 0;
+        margin: 0 0 1.8rem 0;
         line-height: 1.65;
         font-weight: 300;
     }
@@ -739,4 +752,75 @@ ul{
 .generic-content-container{
         font-size: 1.125rem
 }
+    }
+
+.section-title{
+    font-size: 2.55rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+@media( min-width: 530px){
+
+.section-title{
+        font-size: 3.75rem
+}
+    }
+
+.section-title strong{
+        font-weight: 500;
+    }
+
+.section-title__icon{
+        display: block;
+        margin: 0 auto .7rem auto;
+    }
+
+@media( min-width: 530px){
+
+.section-title__icon{
+            display:  inline-block;
+            margin: 0 .5rem 0 0
+    }
+    }
+
+.feature-item{
+    position: relative;
+}
+
+@media( min-width: 530px){
+
+.feature-item{
+        padding-left: 96px
+}
+    }
+
+.feature-item__icon{
+        display: block;
+        margin: 0 auto;
+    }
+
+@media( min-width: 530px){
+
+.feature-item__icon{
+            position: absolute;
+            left: 0
+    }
+    }
+
+.feature-item__title{
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: 300;
+        margin-top:  .7em;
+        margin-bottom: .8rem;
+    }
+
+@media( min-width: 530px){
+
+.feature-item__title{
+            text-align: left;
+            font-size: 1.875rem;
+            margin-top:  1em
+    }
     }
