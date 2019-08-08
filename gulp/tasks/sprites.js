@@ -5,6 +5,12 @@ del = require('del'); //paczka do usuwania
 
 //musisz podać taki parametr do svgSprite aby utworzył sprite w podfolderze css
 var config = {
+    //po dodaniu tego shape coś jest nie tak z nazwą pliku
+    shape: {
+        spacing: {
+            padding: 2
+        }
+    },
     mode: {
         css: {
             sprite: 'sprite.svg', //pattern
